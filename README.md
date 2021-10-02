@@ -1,3 +1,7 @@
+[Home](README.md)
+[About me](about.md)
+
+
 ### Hi there 👋
 
 + 🔭 I’m currently working on ...
