@@ -7,3 +7,5 @@ relative_links:
 include:
         - README.md
         - about.md
+github:
+  is_project_page: false
