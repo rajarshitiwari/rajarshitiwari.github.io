@@ -1,6 +1,6 @@
 [Home](README.md)
 [About me](about.md)
-
+[Random Entries](random.md)
 
 ### Hi there 👋
 
