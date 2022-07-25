@@ -1,6 +1,7 @@
 plugins:
         - jekyll-relative-links
-theme: jekyll-theme-hacker
+theme: jekyll-theme-timeline
+
 relative_links:
         enabled: true
         collections: true
