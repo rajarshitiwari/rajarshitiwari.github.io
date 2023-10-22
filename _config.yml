@@ -1,14 +1,20 @@
-plugins:
-        - jekyll-relative-links
+title: Rajarshi Tiwari
+description: Rajarshi Tiwari's Page
 theme: jekyll-theme-hacker
 
+plugins:
+    - jekyll-remote-theme
+    - jekyll-relative-links
+remote-theme: jekyll-theme-hacker
+
 relative_links:
-        enabled: true
-        collections: true
+    enabled: true
+    collections: true
 include:
-        - README.md
-        - about.md
-        - random.md
+    - README.md
+    - about.md
+    - random.md
+
 github:
   is_project_page: false
 

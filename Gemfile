@@ -7,6 +7,8 @@ gem "jekyll"
 gem 'jekyll-feed'
 gem 'jekyll-readme-index'
 gem 'jekyll-relative-links'
+gem 'jekyll-theme-hacker'
+gem 'jekyll-remote-theme'
 gem 'jekyll-toc'
 gem 'jekyll-youtube'
 gem 'jemoji'

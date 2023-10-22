@@ -1,7 +1,7 @@
-[Home](README.md)
-[About me](about.md)
-[Random Entries](random.md)
-
+---
+title: About Me
+layout: default
+---
 
 # About me
 

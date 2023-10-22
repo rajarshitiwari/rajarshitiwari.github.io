@@ -1,6 +1,7 @@
-[Home](README.md)
-[About me](about.md)
-[Random Entries](random.md)
+---
+title: Rajarshi Tiwari's page
+layout: default
+---
 
 ### Hi there 👋
 
