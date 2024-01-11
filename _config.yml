@@ -5,6 +5,7 @@ theme: jekyll-theme-hacker
 plugins:
     - jekyll-remote-theme
     - jekyll-relative-links
+    - jekyll-readme-index
 remote-theme: jekyll-theme-hacker
 
 relative_links:
