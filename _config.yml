@@ -16,8 +16,8 @@ include:
     - random.md
 
 readme_index:
-	enabled: true
+    enabled: true
 github:
-  is_project_page: false
+    is_project_page: false
 
 ignore_theme_config: true
