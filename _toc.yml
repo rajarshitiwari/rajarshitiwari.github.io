@@ -3,6 +3,13 @@
 
 format: jb-book
 root: index
-chapters:
-- file: about
-- file: random
+parts:
+  - caption: About Me
+    chapters:
+    - file: about
+  - caption: Random Entries
+    chapters:
+    - file: random
+  - caption: Useful References
+    chapters:
+    - file: references

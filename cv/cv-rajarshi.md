@@ -6,8 +6,9 @@ mermaid: true
 ---
 
 
-## Dr. Rajarshi Tiwari
-# Curriculum Vitae
+# Dr. Rajarshi Tiwari
+
+## Curriculum Vitae
 
 ---
 
@@ -25,7 +26,7 @@ mermaid: true
 ![photo](./rajr_cv.jpg){width="150"}
 
 ---
-## Basic information
+### Basic information
 
 |Bio                             |
 |--                              |
@@ -34,13 +35,13 @@ mermaid: true
 |Resident in Ireland for 10 years|
 
 
-## Positions and Roles
+### Positions and Roles
 ||||
 |--|--|--|
 |2013-2023|Research Fellow|School of Physics, CRANN and AMBER, Trinity College Dublin, Ireland|
 |2023-Now|Sr. Computational Scientist|Irish Centre of High End Computing, Dublin, Ireland|
 
-## Education
+### Education
 |Years|Degree| Institution|
 |--   |--    |--          |
 |2008-2014| PhD in Condensed Matter Physics^[1]| Harish Chandra Research Institute, Allahabad, India|
@@ -50,7 +51,7 @@ mermaid: true
 [1]: **Thesis**: _The effect of geometrical frustration on some correlated electron systems_, Supervisor: **Prof. Pinaki Majumdar**.
 
 
-## Short biography
+### Short biography
 I come from a city of Allahabad, in the state of Uttar Pradesh in India, where I got most of my education.
 I did my B.Sc. from University of Allahabad, India with Physics and Mathematics as major in 2005.
 Then I joined the Integrated Ph.D. (M.Sc. + Ph.D.) program at Harish-Chandra Research Institute (HRI),
@@ -60,16 +61,16 @@ for a year as Research Assistant, and after defending my thesis in September 201
 post-doctoral researcher. Currently I am a Research Fellow in the School of Physics, and work over a range of
 project that overlap material science, many-body theory, high-througput DFT and machine learning.
 
-## Computational Skills
+### Computational Skills
 ![skills](./skills.png)
 
-## Research Interests
+### Research Interests
 My research insterest include solving models of electron correlation, high throughput \textit{ab-initio} simulations for material science. I also explore the use of Machine learning in these fields to expand and accelerate my research.
 
-### Correlated Systems, many-body models
+#### Correlated Systems, many-body models
 During my Ph.D. my research interest grew around strongly correlated electronic systems, where I primarily worked on models of correlation. I love to explore magnetism, transport, frustration, disorder and their interplay in correlated electronic systems, such as transition metal Oxides, magnetic perovskites, pyrochlore systems. The phenomenology of these systems is best explored with suitably simplified models, such Hubbard model, Kondo-Lattice Model, Holstein model, Heisenberg model, and their variations/combinations depending on whether the relevant degrees of freedom are (i) itinerant electrons, (ii) localized spins, or (iii) phonons. I explore solving and analysing appropriate models of correlations through real-space based techniques like Monte-Carlo methods and Exact-Diagonalization.
 
-### Machine Learning in material science
+#### Machine Learning in material science
 
 After joining Trinity College Dublin, I expanded my research interests over computational materials science along with condensed-matter physics, where I explore application of machine learning in (i) solving or learning features in correlated systems and (ii) high-throughput _ab initio_
 calculations. I learnt _ab-initio_ simulations tools such as VASP/FHI-AIMS to compute energetics of real systems, organize and process the data for ML applications. Here at TCD, we are also working on developing a _workflow_ to combine _ab-initio_ and ML tools to build up force fields for simulating large, disordered systems. The ICHEC-Flagship project "EuroCC-AF-3" has been quite helpful in this direction.
@@ -131,7 +132,7 @@ Some of the undergrads develop interest in academia and join Ph.D. programme eit
 
 - Exchange interactions and magnetic phases of transition metal oxides: Benchmarking advanced ab initio methods, T. Archer _et al_, PRB **84** 115114, 2011.
 
-## References
+### References
 #### Post-Doctoral
 Prof. Stefano Sanvito
 School of Physics and CRANN
