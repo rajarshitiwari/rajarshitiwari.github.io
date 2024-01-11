@@ -1,27 +1,41 @@
-title: Rajarshi Tiwari
-description: Rajarshi Tiwari's Page
-theme: jekyll-theme-hacker
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
 
-plugins:
-    - jekyll-remote-theme
-    - jekyll-relative-links
-    - jekyll-readme-index
+title: Landing page for QPCC's flashcards and quizes
+author: ICHEC team
+logo: logo.png
 
-remote-theme: jekyll-theme-hacker
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
 
-relative_links:
-    enabled: true
-    collections: true
-include:
-    - about.md
-    - random.md
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
 
-readme_index:
-    enabled: true
-    remove_originals: false
-    with_frontmatter: false
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
 
-github:
-    is_project_page: false
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
 
-ignore_theme_config: true
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+html:
+  extra_footer: "Copyright@2022"
+
+# remove jupyterbooks copyright info
+sphinx:
+  config:
+    html_show_copyright: false
+    body_min_width: '72%'
