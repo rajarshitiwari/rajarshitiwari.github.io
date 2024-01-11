@@ -3,7 +3,7 @@
 
 title: Welcome to my page.
 author: Dr. Rajarshi Tiwari
-logo: rajarshi-logo-black.png
+logo: rajarshi-logo-red.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -38,3 +38,6 @@ html:
 sphinx:
   config:
     html_show_copyright: false
+    # html_theme: sphinx_wagtail_theme #groundwork
+    # html_theme_options:
+    #  dark_logo: rajarshi-logo-white.png
