@@ -6,6 +6,7 @@ plugins:
     - jekyll-remote-theme
     - jekyll-relative-links
     - jekyll-readme-index
+
 remote-theme: jekyll-theme-hacker
 
 relative_links:
@@ -17,6 +18,9 @@ include:
 
 readme_index:
     enabled: true
+    remove_originals: false
+    with_frontmatter: false
+
 github:
     is_project_page: false
 
