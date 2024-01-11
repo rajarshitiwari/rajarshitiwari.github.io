@@ -3,7 +3,7 @@ title: Rajarshi Tiwari's page
 layout: default
 ---
 
-### Hi there 👋
+# Hi there 👋
 
 This is just landing page for github, as it's the one gets loaded.
 For the website, please visit [my home page](https://rajarshitiwari.github.io/) where some of my following info is available.
