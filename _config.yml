@@ -12,10 +12,11 @@ relative_links:
     enabled: true
     collections: true
 include:
-    - README.md
     - about.md
     - random.md
 
+readme_index:
+	enabled: true
 github:
   is_project_page: false
 
