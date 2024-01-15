@@ -7,9 +7,15 @@ parts:
   - caption: About Me
     chapters:
     - file: about
+  - caption: Research Interests
+    chapters:
+    - file: research.md
   - caption: Random Entries
     chapters:
     - file: random
+  - caption: Curreculum Vitae
+    chapters:
+    - file: cv/cv-rajarshi.md
   - caption: Useful References
     chapters:
     - file: references
