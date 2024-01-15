@@ -15,24 +15,67 @@ mermaid: true
 | My     | Details        |
 |--      |--              |
 |email   | rajarshi.tiwari@ichec.ie|
-|address | 232 Sundrive Road, Crumlin, Dublin 12, Ireland|
+|address | 291 Crumlin Road, Dublin 12, Ireland|
 |phone   |+353899610436, +919919270219|
-|homepage| www.tcd.ie/research/profiles/?profile=tiwarir|
+|homepage| rajarshitiwari.github.io|
 |linkedin| rajarshi-tiwari|
 |twitter | rajr0|
 |github  | rajarshitiwari|
 |gitlab  | rajarshitiwari|
 
-![photo](./rajr_cv.jpg){width="150"}
 
 ---
 ### Basic information
 
+::::{grid}
+:gutter: 2
+
+:::{grid-item}
+:outline:
+A
+:::
+:::{grid-item}
+:outline:
+B
+:::
+:::{grid-item}
+:outline:
+C
+:::
+:::{grid-item}
+:outline:
+D
+:::
+
+::::
+
+
+::::{grid}
+:gutter: 2
+
+:::{grid-item}
+:outline:
+```{table}
 |Bio                             |
 |--                              |
 |Indian National                 |
 |DOB: April 30, 1984. Married    |
 |Resident in Ireland for 10 years|
+```
+:::
+
+:::{grid-item}
+:outline:
+```{image} ./rajr_cv.jpg
+:alt: photo
+:width: 200px
+:align: right
+```
+
+:::
+::::
+
+
 
 
 ### Positions and Roles
