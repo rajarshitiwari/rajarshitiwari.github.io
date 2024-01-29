@@ -190,8 +190,11 @@ Dipartimento di Fisica, Università di Cagliari, ITALY.
 :email: alessio.filippetti@dsf.unica.it
 
 #### Doctoral
+```{dropdown}
+
 Prof. Pinaki Majumdar
 Harish Chandra Research Institute
 Prayagraj, UP, INDIA
 :phone: +915322274316
 :email: pinaki@hri.res.in
+```
