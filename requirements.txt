@@ -3,3 +3,4 @@ jupytercards
 jupyterquiz
 matplotlib
 numpy
+sphinxemoji
