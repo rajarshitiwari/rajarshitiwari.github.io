@@ -1,5 +1,6 @@
 ---
 title: Rajarshi Tiwari's Curriculum Vitae
+author: Rajarshi Tiwari
 layout: default
 jupytext:
   formats: md:myst
@@ -10,6 +11,11 @@ kernelspec:
   display_name: Python 3
   language: python
   name: python3
+exports:
+  - format: pdf
+    template: springer
+    output: cv-rajarshi.pdf
+    numbering: false
 ---
 
 
