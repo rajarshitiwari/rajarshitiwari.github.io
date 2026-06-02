@@ -49,6 +49,32 @@ exports:
 ``````
 
 
+``````{list-table}
+:widths: [10, 10]
+* - A
+  - B
+* -
+```{table}
+|Rajarshi Tiwari                 |
+|--                              |
+|Indian National                 |
+|DOB: April 30, 1984. Married    |
+|Resident in Ireland for 10 years|
+|Condensed matter, Quantum & HPC Computing, Machine Learning|
+```
+  -
+```{image} ./rajr_cv.jpg
+    :alt: photo
+    :width: 300px
+    :align: right
+```
+``````
+
+
+
+
+
+
 ```````{card} Social and Web profiles
 
 
