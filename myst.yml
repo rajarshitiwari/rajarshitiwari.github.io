@@ -35,10 +35,9 @@ project:
 site:
   template: book-theme
   options:
-  #   favicon: favicon.ico
     logo: _static/rajarshi-logo-black.png
     logo_dark: _static/rajarshi-logo-white.png
     style: _static/style.css
-  
+
 #  html:
 #    extra_footer: "Copyright @2024""
