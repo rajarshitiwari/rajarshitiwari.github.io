@@ -1,7 +1,7 @@
 ---
 title: Rajarshi Tiwari's Curriculum Vitae
 author: Rajarshi Tiwari
-layout: default
+layout: doc
 jupytext:
   formats: md:myst
   text_representation:
@@ -23,112 +23,64 @@ exports:
 
 ## Basic information
 
-``````{grid}
-:gutter: 2
+<CvHeader image="./rajr_cv.jpg">
 
-````{grid-item}
-:outline:
-:columns: 9
-```{table}
-|Rajarshi Tiwari                 |
-|--                              |
-|Indian National                 |
-|DOB: April 30, 1984. Married    |
-|Resident in Ireland for 10 years|
-|Condensed matter, Quantum & HPC Computing, Machine Learning|
-```
-````
-````{grid-item}
-:columns: 3
-```{image} ./rajr_cv.jpg
-    :alt: photo
-    :width: 200px
-    :align: right
-```
-````
-``````
+| **Rajarshi Tiwari** |
+| :--- |
+| Naturalised Irish Citizen, Overseas Citezen of India |
+| DOB: April 30, 1984. Married |
+| Resident in Ireland for 10 years |
+| Condensed matter, Quantum & HPC Computing, Machine Learning |
 
+</CvHeader>
 
-``````{list-table}
-:widths: [10, 10]
-* - A
-  - B
-* -
-```{table}
-|Rajarshi Tiwari                 |
-|--                              |
-|Indian National                 |
-|DOB: April 30, 1984. Married    |
-|Resident in Ireland for 10 years|
-|Condensed matter, Quantum & HPC Computing, Machine Learning|
-```
-  -
-```{image} ./rajr_cv.jpg
-    :alt: photo
-    :width: 300px
-    :align: right
-```
-``````
+### Social and Web Profiles
 
+<SocialGrid>
+  <SocialCard title="Email" link="mailto:rajarshi.tiwari@ichec.ie">
+    rajarshi.tiwari@ichec.ie<br>tiwarir@tcd.ie
+  </SocialCard>
+  
+  <SocialCard title="Homepage" link="https://rajarshitiwari.github.io">
+    rajarshitiwari.github.io
+  </SocialCard>
+  
+  <SocialCard title="LinkedIn" link="https://www.linkedin.com/in/rajarshi-tiwari/">
+    rajarshi-tiwari
+  </SocialCard>
+  
+  <SocialCard title="GitHub" link="https://github.com/rajarshitiwari/">
+    rajarshitiwari
+  </SocialCard>
 
+  <SocialCard title="Gitlab" link="https://gitlab.com/rajarshitiwari/">
+    rajarshitiwari
+  </SocialCard>
+  <SocialCard title="Twitter / X" link="https://twitter.com/rajr0">
+    rajr0
+  </SocialCard>
+</SocialGrid>
 
-
-
-
-```````{card} Social and Web profiles
-
-
-``````{grid}
-:gutter: 3 3 3 3
-`````{grid-item-card} Email
-:columns: 4
-rajarshi.tiwari@ichec.ie tiwarir@tcd.ie
-`````
-`````{grid-item-card} Homepage
-:columns: 4
-:link: https://rajarshitiwari.github.io
-[rajarshitiwari.github.io](https://rajarshitiwari.github.io)
-`````
-`````{grid-item-card} Linkedin
-:columns: 4
-:link: https://www.linkedin.com/in/rajarshi-tiwari/
-[rajarshi-tiwari](https://www.linkedin.com/in/rajarshi-tiwari/)
-`````
-`````{grid-item-card} GitHub
-:columns: 4
-:link: https://github.com/rajarshitiwari/
-[rajarshitiwari](https://github.com/rajarshitiwari/)
-`````
-`````{grid-item-card} Gitlab
-:columns: 4
-:link: https://gitlab.com/rajarshitiwari/
-[rajarshitiwari](https://gitlab.com/rajarshitiwari)
-`````
-`````{grid-item-card} Twitter / X
-:columns: 4
-:link: https://twitter.com/rajr0
-[rajr0](https://twitter.com/rajr0)
-`````
-``````
-```````
 
 ## Positions and Roles
-||||
-|--|--|--|
+|Year| Role | Institution |
+|--- |---   |---          |
 |2013-2023|Research Fellow|School of Physics, CRANN and AMBER, Trinity College Dublin, Ireland|
 |2023-Now|Sr. Computational Scientist|Irish Centre of High End Computing, Dublin, Ireland|
 
 ## Education
-|Years|Degree| Institution|
-|--   |--    |--          |
+|Years    |Degree                              | Institution|
+|---      |---                                 |---         |
 |2008-2014| PhD in Condensed Matter Physics^[1]| Harish Chandra Research Institute, Allahabad, India|
-|2005-2008| MSc in Physics| Harish Chandra Research Institute, Allahabad, India|
-|2002--2005| BSc in Physics and Mathematics| University of Allahabad, India|
+|2005-2008| MSc in Physics                     | Harish Chandra Research Institute, Allahabad, India|
+|2002-2005| BSc in Physics and Mathematics     | University of Allahabad, India|
 
-[1]: **Thesis**: _The effect of geometrical frustration on some correlated electron systems_, Supervisor: **Prof. Pinaki Majumdar**.
+>[!NOTE] **Thesis**
+> [1]: [_The effect of geometrical frustration on some correlated electron systems_](https://rajarshitiwari.github.io/thesis/), Supervisor: **Prof. Pinaki Majumdar**.
 
 
 ## Short biography
+
 I come from a city of Allahabad, in the state of Uttar Pradesh in India, where I got most of my education.
 I did my B.Sc. from University of Allahabad, India with Physics and Mathematics as major in 2005.
 Then I joined the Integrated Ph.D. (M.Sc. + Ph.D.) program at Harish-Chandra Research Institute (HRI),
@@ -139,71 +91,10 @@ post-doctoral researcher. Currently I am a Research Fellow in the School of Phys
 project that overlap material science, many-body theory, high-througput DFT and machine learning.
 
 ### Computational Skills
-% ![skills](./skills.png)
 
-```{code-cell} ipython3
-:tags: [remove-input]
+![skills](./skills.png)
 
-import numpy as np
-import matplotlib.pyplot as plt
-#
-soft = ['Language', 'Linux/HPC', 'Machine\nlearning', 'Visualize', 'Simulation', 'Tools']
-soft.reverse()
-
-texts = [
-    ['FORTRAN', 'Python3', 'Julia', 'C++', '', ''],
-    ['zsh/bash', 'Linux admin', 'openmp/MPI', 'Cuda/GPU', 'slurm', ''],
-    ['Tensorflow', 'Pytorch', 'mxnet', 'scikit', '', ''],
-    ['Matplotlib', 'Gnuplot', 'asymptote', 'VESTA', '', ''],
-    ['Monte-Carlo', 'Modelling', 'ase/pymatgen', 'AIMS', 'VASP', 'qiskit'],
-    ['MS office', 'Mathematica', 'emacs', 'vscode', 'latex', '']
-    ]
-texts.reverse()
-skill = [
-    [8, 7, 6, 5, 0, 0],
-    [8, 8, 8, 7, 7, 0],
-    [7, 6, 5, 5, 0, 0],
-    [8, 8, 8, 6, 0, 0],
-    [9, 9, 8, 8, 7, 5],
-    [6, 6, 8, 6, 8, 0]
-    ]
-skill.reverse()
-texts = np.array(texts).T
-skill = np.array(skill, dtype=float).T
-def get_rectangle1(h_val, v_val, h_shift):
-    x, y, h = h_val, v_val, h_shift
-    verts = list(zip([-x + h, x + h, x + h, -x + h, -x + h], [-y, -y, y, y, -y]))
-    return verts
-#                                                    def get_rectangle2(h_val, v_val, h_shift):
-    x, y, h = h_val, v_val, h_shift
-    verts = list(zip([0. + h, x + h, x + h, 0. + h, 0. + h], [0., 0., y, y, 0.]))
-    return verts
-#                                                    v_val = 1.0
-h_val = 3
-h_shift = 0
-v_val, h_val, h_shift = 1.8, 3.6, 0.0
-verts0 = get_rectangle1(h_val, v_val, h_shift)
-#cmap = plt.cm.get_cmap('Spectral_r')
-cmap = plt.colormaps.get_cmap('plasma')
-plt.figure(figsize=(15,6))
-plt.subplots_adjust(left=0.11, right=0.95, top=0.99, bottom=0.01)
-plt.xlim(-0.5, 5.5)
-plt.ylim(-0.5, 5.5)
-for i in range(6):
-    for j in range(6):
-        plt.scatter(i, j, s=24500, c=skill[i, j], marker=verts0, vmin=0, vmax=10, cmap=cmap)
-        bbox = dict(boxstyle="round", lw=0.5, ec=cmap(skill[i, j]), fc='white', alpha=0.3)
-        plt.text(i, j, s=texts[i, j], fontsize=21, ha='center', va='center', bbox=bbox)
-#
-plt.yticks(np.arange(6), soft, fontsize=21, fontname='Sans Serif')
-plt.tick_params('y',  size=0)
-plt.xticks([])
-cax = plt.axes([0.952, 0.01, 0.03, 0.98])
-cax.tick_params(labelsize=15)
-plt.colorbar(cax=cax, ticks=np.arange(1,10))
-_ = plt.text(0.25, 3, "Confidence", rotation='vertical', color='white', fontsize=18)
-```
-
+<SkillsMatrix/>
 
 ### Research Interests
 My research insterest include solving models of electron correlation, high throughput \textit{ab-initio} simulations for material science. I also explore the use of Machine learning in these fields to expand and accelerate my research.
@@ -275,57 +166,58 @@ Some of the undergrads develop interest in academia and join Ph.D. programme eit
 
 ### References
 
-``````{tab-set}
-````{tab-item} Doctoral
-```{card}
-|   | Doctoral |
+### References
+
+<TabGroup :labels='["Professional 1", "Professional 2", "Post-Doctoral", "Doctoral", "External"]'>
+
+<template #tab-0>
+
+
+|🕵🏻 | **Dr. Venkatesh Kannan**|
 |---|---|
-|🕵🏻 | Prof. Pinaki Majumdar |
-|🏫 |Harish Chandra Research Institute, Prayagraj, UP, INDIA|
-|☎️ | +91 532 2274316 |
-|📧| pinaki@hri.res.in|
-```
-````
-````{tab-item} External
-```{card}
-|   | External|
-|---|---|
-|🕵🏻 | Prof. Alessio Filippetti|
-|🏫 |Dipartimento di Fisica, Università di Cagliari, Italy|
-|☎️ | (+39) (070) 675 4853 |
-|📧| alessio.filippetti@dsf.unica.it|
-```
-````
-````{tab-item} Post-Doctoral
-```{card}
-||Post-Doctoral|
-|---|---|
-|🕵🏻 | Prof. Stefano Sanvito|
-|🏫 |School of Physics and CRANN, Trinity College Dublin, Ireland|
-|☎️ | +353 (0) 18963065 |
-|📧| sanvitos@tcd.ie|
-```
-````
-````{tab-item} Professional 1
-```{card}
-||Post-Doctoral|
-|---|---|
-|🕵🏻 | Prof. Jean-Christophe (JC) Desplat|
-|🏫 |Irish Centre for High-End Computing, Dublin, Ireland|
-|☎️ | +353 1 5291021 |
-|📧| j-c.desplat@ichec.ie|
-```
-````
-````{tab-item} Professional 2
-```{card}
-||Post-Doctoral|
-|---|---|
-|🕵🏻 | Dr. Venkatesh Kannan|
 |🏫 |Irish Centre for High-End Computing, Dublin, Ireland|
 |☎️ | +353 1 5291028 |
 |📧| venkatesh.kannan@ichec.ie|
-```
-````
-``````
 
+</template>
 
+<template #tab-1>
+
+|🕵🏻 | **Prof. Jean-Christophe (JC) Desplat**|
+|---|---|
+|🏫 |Irish Centre for High-End Computing, Dublin, Ireland|
+|☎️ | +353 1 5291021 |
+|📧| j-c.desplat@ichec.ie|
+
+</template>
+
+<template #tab-2>
+
+|🕵🏻 | **Prof. Stefano Sanvito**|
+|---|---|
+|🏫 |School of Physics and CRANN, Trinity College Dublin, Ireland|
+|☎️ | +353 (0) 18963065 |
+|📧| sanvitos@tcd.ie|
+
+</template>
+
+<template #tab-3>
+
+|🕵🏻 | **Prof. Pinaki Majumdar** |
+|---|---|
+|🏫 |Harish Chandra Research Institute, Prayagraj, UP, INDIA|
+|☎️ | +91 532 2274316 |
+|📧| pinaki@hri.res.in|
+
+</template>
+
+<template #tab-4>
+
+|🕵🏻 | **Prof. Alessio Filippetti**|
+|---|---|
+|🏫 |Dipartimento di Fisica, Università di Cagliari, Italy|
+|☎️ | (+39) (070) 675 4853 |
+|📧| alessio.filippetti@dsf.unica.it|
+
+</template>
+</TabGroup>

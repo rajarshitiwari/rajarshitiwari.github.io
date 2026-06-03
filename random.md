@@ -1,6 +1,6 @@
 ---
 title: Random Entries
-layout: default
+layout: doc
 ---
 # Random Entries
 

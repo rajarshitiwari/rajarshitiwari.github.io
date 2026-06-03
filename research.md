@@ -1,6 +1,6 @@
 ---
 title: Research Interests
-layout: default
+layout: doc
 ---
 
 # Research Insterests
