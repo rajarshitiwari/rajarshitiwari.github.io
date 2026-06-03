@@ -19,3 +19,7 @@ Here are some of the interesting aspects of python for me
   height="100%"
 ></iframe>
 
+
+## Bike purchase HowTos
+
+[See the link](./blog/bike-purchase.md)

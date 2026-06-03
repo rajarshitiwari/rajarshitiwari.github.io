@@ -1,0 +1,36 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: ae911115-881b-4d2d-9d4b-89874ed99c9f
+  # title:
+  # description:
+  # keywords: []
+  # authors:
+  #   - name: "Rajarshi Tiwari"
+  github: https://github.com/rajarshitiwari/rajarshitiwari.github.io
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    - file: index.md
+    - caption: About Me
+    - file: about
+    - caption: Research Interests
+    - file: research.md
+    - caption: Random Entries
+    - file: random.md
+    - caption: Curreculum Vitae
+    - file: cv/cv-rajarshi.md
+    - caption: Useful References
+    - file: references.md
+    - caption: Bike Purchase Howto's
+    - file: blogs/bike-purchase
+
+
+site:
+  template: book-theme
+  options:
+  #   favicon: favicon.ico
+    logo: rajarshi-logo-red.png
+    style: style.css
+  
+#  html:
+#    extra_footer: "Copyright @2024""
