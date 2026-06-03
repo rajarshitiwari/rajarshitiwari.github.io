@@ -1,3 +1,19 @@
+---
+title: Bike Purchase Howto's
+jupytext:
+    formats: md:myst
+    text_representation:
+        extension: .md
+        format_name: myst
+kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+mystnb:
+    render_markdown_format: myst
+---
+
+
 # Bike purchase Howto's
 
 These are excerpts from AI chatbot, helping me choose my next bike. 
@@ -20,7 +36,17 @@ Here’s how the conversation unfolded. It’s not a polished buyer’s guide �
 
 ## 🤔 Initial Comparison: FastRoad 1 vs FastRoad SL 1
 
+````{div}
+:class: chat-container
+
+```{div}
+:class: user-bubble
+
 **Q:** What are the key differences in specs and reliability?
+```
+
+```{div}
+:class: ai-bubble
 
 **A:**
 
@@ -38,11 +64,20 @@ Here’s how the conversation unfolded. It’s not a polished buyer’s guide �
 
 **Verdict:** SL 1 is a bit lighter and has a higher-end drivetrain. Both are good in terms of durability.
 
+```
 ---
 
 ## ⚙️ Speed vs Cadence: Where Do I Stand?
 
+```{div}
+:class: user-bubble
+
 **Q:** I currently ride a 700c, 42T crankset, 7-speed Shimano Tourney setup. I can hit 39 km/h — what cadence does that imply?
+
+```
+
+```{div}
+:class: ai-bubble
 
 **A:** We modeled it:
 
@@ -59,9 +94,7 @@ Here’s how the conversation unfolded. It’s not a polished buyer’s guide �
 
 Cadence is calculated using:
 
-```text
 Cadence (RPM) = (Speed * 1000) / (Wheel Circumference * Gear Ratio * 60)
-```
 
 Where:
 
@@ -69,11 +102,18 @@ Where:
 - Wheel circumference in meters (700x28c ≈ 2.096 m)
 - Gear ratio = front\_chainring / rear\_cog
 
----
-
+```
 ## ♻️ What Happens With a 50T Chainring?
 
+```{div}
+:class: user-bubble
+
 **Q:** What if I switch to 50/11T like the FastRoad SL 1? How much faster can I go at the same cadence?
+
+```
+
+```{div}
+:class: ai-bubble
 
 **A:**
 
@@ -82,13 +122,9 @@ Where:
 
 ### 📊 Plot: Speed vs Cadence (Including FastRoad SL 1)
 
-
-
 ### 🔢 Formula Used to Estimate Speed:
 
-```text
 Speed (km/h) = Cadence * Gear Ratio * Wheel Circumference * 60 / 1000
-```
 
 ---
 
@@ -145,7 +181,6 @@ Even the performance models like FastRoad SL 1 support:
 
 ✅ All shortlisted bikes support rear rack use — suitable for occasional loads.
 
----
 
 ## 📊 Sizing: What Fits a 171 cm Rider?
 
@@ -168,11 +203,14 @@ Try before buying if possible — some brands size large (like Giant).
 - 📏 At 171 cm, you're comfortably in Small/52 territory across brands.
 - 💡 All options allow some form of light touring or rack setup.
 
+```
+````
+
 ---
 
 ## 📂 Appendix: Cadence to Speed Code (Python)
 
-```python
+```{code-cell} python
 import matplotlib.pyplot as plt
 import numpy as np
 

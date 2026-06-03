@@ -8,8 +8,12 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "ipykernel>=7.2.0",
+    "ipython>=9.13.0",
     "jupyter-book>=2.1.5",
+    "matplotlib>=3.10.9",
     "mystmd>=1.9.1",
+    "numpy>=2.4.6",
     "scholarly>=1.7.11",
 ]
 

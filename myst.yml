@@ -30,7 +30,7 @@ site:
   options:
   #   favicon: favicon.ico
     logo: rajarshi-logo-red.png
-    style: style.css
+    style: _static/style.css
   
 #  html:
 #    extra_footer: "Copyright @2024""
