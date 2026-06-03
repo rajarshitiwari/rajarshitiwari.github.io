@@ -137,8 +137,8 @@ Some of the undergrads develop interest in academia and join Ph.D. programme eit
 - I also participate in preparing the hardware specifications and tenders of HPC systems/workstations that we purchase.
 
 ### Publications
-  
-- Emergence of highly bond-dependent anisotropic magnetic interactions in Sr$_4$RhO$_66$: a theoretical study, S. K. Pandey, Q. Gu, R. Tiwari, arXiv:2207.05045, 2022.
+
+Below is list of selected publications, for detailed list, please check my [Google Scholar profile](https://scholar.google.com/citations?user=zxrDxwEAAAAJ&hl=en)
 
 - Reactivity of transition-metal alloys to oxygen and sulfur, R. Tiwari, J. Nelson, C. Xu, and S. Sanvito, PRMaterials **5** 083801, 2021.
 
@@ -147,10 +147,6 @@ Some of the undergrads develop interest in academia and join Ph.D. programme eit
 - Orbital mott transition in two dimensional pyrochlore lattice, A. Saket and R. Tiwari, JPCM **32** 255601, 2020.
 
 - Machine learning density functional theory for the hubbard model, J. Nelson, R. Tiwari, and S. Sanvito, PRB **99** 075132, 2019.
-
-- Cr doping induced negative transverse magnetoresistance in Cd$_3$As$_2$ thin films, Y. Liu _et al_, PRB **97** 085303, 2018.
-
-- Mott-hubbard transition and spin-liquid state on the pyrochlore lattice, N. Swain, R. Tiwari, and P. Majumdar, PRB **94** 155119, 2016.
 
 - Spectroscopic signatures of the mott transition on the anisotropic triangular lattice, R. Tiwari and P. Majumdar, EPL **108** 27007, 2014.
 
@@ -161,10 +157,6 @@ Some of the undergrads develop interest in academia and join Ph.D. programme eit
 - Noncollinear magnetic order in the double perovskites, R. Tiwari and P. Majumdar, IJMP B, **27** 1350018, 2013.
 
 - Visualizing the mott transition, R. Tiwari and P. Majumdar, Current Science **103** 518-524, 2012.
-
-- Exchange interactions and magnetic phases of transition metal oxides: Benchmarking advanced ab initio methods, T. Archer _et al_, PRB **84** 115114, 2011.
-
-### References
 
 ### References
 

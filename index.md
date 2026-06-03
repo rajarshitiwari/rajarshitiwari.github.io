@@ -1,6 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: home
+title: home
 
 hero:
   name: "Dr. Rajarshi Tiwari"
@@ -31,3 +31,5 @@ features:
   - title: Technical Documentation
     details: Creating open-source documentation utilities, including custom Slidev addons, to streamline complex technical presentations.
 ---
+
+<HomeProfile/>
