@@ -11,25 +11,33 @@ project:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
     - file: index.md
-    - caption: About Me
-    - file: about
-    - caption: Research Interests
-    - file: research.md
-    - caption: Random Entries
-    - file: random.md
-    - caption: Curreculum Vitae
-    - file: cv/cv-rajarshi.md
-    - caption: Useful References
-    - file: references.md
-    - caption: Bike Purchase Howto's
-    - file: blogs/bike-purchase
-
-
+    
+    - title: About Me
+      file: about.md
+      
+    - title: Research Interests
+      file: research.md
+      
+    - title: Random Entries
+      file: random.md
+      
+    - title: Curriculum Vitae
+      file: cv/cv-rajarshi.md
+      
+    - title: Useful References
+      file: references.md
+      
+    # Here is your new hierarchy!
+    - title: Blogs
+      children:
+        - title: Bike Purchase Howto's
+          file: blogs/bike-purchase.md
 site:
   template: book-theme
   options:
   #   favicon: favicon.ico
-    logo: rajarshi-logo-red.png
+    logo: _static/rajarshi-logo-black.png
+    logo_dark: _static/rajarshi-logo-white.png
     style: _static/style.css
   
 #  html:

@@ -8,7 +8,7 @@ jupytext:
     extension: .md
     format_name: myst
 kernelspec:
-  display_name: Python 3
+  display_name: python3
   language: python
   name: python3
 exports:
@@ -117,6 +117,8 @@ project that overlap material science, many-body theory, high-througput DFT and 
 ### Computational Skills
 % ![skills](./skills.png)
 
+### Technical Proficiency Matrix
+
 ```{code-cell} ipython3
 :tags: [remove-input]
 
@@ -179,7 +181,6 @@ cax.tick_params(labelsize=15)
 plt.colorbar(cax=cax, ticks=np.arange(1,10))
 _ = plt.text(0.25, 3, "Confidence", rotation='vertical', color='white', fontsize=18)
 ```
-
 
 ### Research Interests
 My research insterest include solving models of electron correlation, high throughput \textit{ab-initio} simulations for material science. I also explore the use of Machine learning in these fields to expand and accelerate my research.

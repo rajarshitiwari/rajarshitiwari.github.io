@@ -207,6 +207,7 @@ Try before buying if possible — some brands size large (like Giant).
 ## 📂 Appendix: Cadence to Speed Code (Python)
 
 ```{code-cell}
+
 import matplotlib.pyplot as plt
 import numpy as np
 

@@ -1,64 +1,70 @@
 p {text-align: justify;}
 
+/* Define variables for the themes */
+:root {
+  /* Light Theme (Default) Variables */
+  --user-bubble-bg: rgba(248, 166, 23, 0.35); /* Increased slightly for "pop" */
+  --ai-bubble-bg: rgba(82, 234, 211, 0.35); /* Increased slightly for "pop" */
+  --user-bubble-text: #24292f;
+  --ai-bubble-text: #24292f;
+  --bubble-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --ai-bubble-code-border: #e1e4e8;
+  --ai-bubble-code-bg: #ffffff;
+}
 
+/* Dark Theme overrides (assuming 'dark' class on html or body) */
+html.dark {
+  --user-bubble-bg: rgba(255, 178, 43, 0.4); /* Warmer, higher contrast */
+  --ai-bubble-bg: rgba(100, 255, 230, 0.4); /* Richer, higher contrast */
+  --user-bubble-text: #f0f0f0; /* Contrasting text color */
+  --ai-bubble-text: #f0f0f0; /* Contrasting text color */
+  --bubble-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for dark mode */
+  --ai-bubble-code-border: #444c56;
+  --ai-bubble-code-bg: #22272e;
+}
 
-/* No container needed! Bubbles sit in the standard document flow */
-
-/* Shared Bubble Properties */
-
-.user-bubble, 
+/* Common Bubble Styles */
+.user-bubble,
 .ai-bubble {
   padding: 0.5rem 1.2rem;
   border-radius: 18px;
   max-width: 85%;
   margin-bottom: 1.5rem; /* Replaces the flex gap */
   line-height: 1.6;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   clear: both;
+  box-shadow: var(--bubble-shadow);
+  /* Optional: Frosted glass effect. Background must allow it.
+     Requires browser support. */
+   backdrop-filter: blur(5px);
 }
 
 /* User Message: Pushed to the right using auto-margins */
 .user-bubble {
-  margin-left: auto; 
   margin-right: 0;
-  background-color: rgba(248, 166, 23, 0.308); /* A nice professional blue */
-  color: black;
+  margin-left: auto;
+  background-color: var(--user-bubble-bg);
+  color: var(--user-bubble-text);
+  /* Slightly more defined asymmetric corner */
   border-bottom-right-radius: 1px; /* Flattens the bottom right corner */
 }
 
 /* AI Message: Pushed to the left using auto-margins */
 .ai-bubble {
   margin-right: auto;
-  margin-left: 0;
-  background-color: rgba(82, 234, 211, 0.308);
-  color: #24292f;
+  margin-left: 0;  
+  background-color: var(--ai-bubble-bg);
+  color: var(--ai-bubble-text);
+  /* Slightly more defined asymmetric corner */
   border-bottom-left-radius: 1px; /* Flattens the bottom left corner */
 }
 
-/* ... keep your dark mode and pre/code formatting rules down here ... */
-
-/* Clean up internal markdown spacing inside the bubbles */
+/* Internal formatting rules from previous steps */
 .chat-container p:last-child {
   margin-bottom: 0;
 }
 
-.user-bubble a {
-  color: #e1efff;
-}
-
 .ai-bubble pre {
-  background-color: #ffffff;
-  border: 1px solid #e1e4e8;
+  background-color: var(--ai-bubble-code-bg);
+  border: 1px solid var(--ai-bubble-code-border);
   border-radius: 6px;
-}
-
-/* Dark Mode Overrides (MyST natively adds the 'dark' class) */
-html.dark .ai-bubble {
-  background-color: #2d333b;
-  color: #adbac7;
-}
-
-html.dark .ai-bubble pre {
-  background-color: #22272e;
-  border-color: #444c56;
 }
