@@ -23,13 +23,13 @@ exports:
 
 ## Basic information
 
-``````{grid}
-:gutter: 2
 
-````{grid-item}
-:outline:
-:columns: 9
+``````{grid} 2 1
+:gutter: 1
+````{grid-item-card}
 ```{table}
+:width: 75%
+
 |Rajarshi Tiwari                 |
 |--                              |
 |Indian National                 |
@@ -38,51 +38,21 @@ exports:
 |Condensed matter, Quantum & HPC Computing, Machine Learning|
 ```
 ````
-````{grid-item}
-:columns: 3
+
+````{grid-item-card}
 ```{image} ./rajr_cv.jpg
-    :alt: photo
-    :width: 200px
-    :align: right
-```
+:width: 210px
 ````
 ``````
-
-
-``````{list-table}
-:widths: [10, 10]
-* - A
-  - B
-* -
-```{table}
-|Rajarshi Tiwari                 |
-|--                              |
-|Indian National                 |
-|DOB: April 30, 1984. Married    |
-|Resident in Ireland for 10 years|
-|Condensed matter, Quantum & HPC Computing, Machine Learning|
-```
-  -
-```{image} ./rajr_cv.jpg
-    :alt: photo
-    :width: 300px
-    :align: right
-```
-``````
-
-
-
-
 
 
 ```````{card} Social and Web profiles
-
 
 ``````{grid}
 :gutter: 3 3 3 3
 `````{grid-item-card} Email
 :columns: 4
-rajarshi.tiwari@ichec.ie tiwarir@tcd.ie
+rajarshi.tiwari@ichec.ie
 `````
 `````{grid-item-card} Homepage
 :columns: 4
@@ -113,19 +83,25 @@ rajarshi.tiwari@ichec.ie tiwarir@tcd.ie
 ```````
 
 ## Positions and Roles
-||||
-|--|--|--|
-|2013-2023|Research Fellow|School of Physics, CRANN and AMBER, Trinity College Dublin, Ireland|
-|2023-Now|Sr. Computational Scientist|Irish Centre of High End Computing, Dublin, Ireland|
+```{table}
+| Year     | Role                      | Institution |
+|---       |---                        |---          |
+|2013-2023 |Research Fellow            |School of Physics, CRANN and AMBER, Trinity College Dublin, Ireland|
+|2023-Now  |Sr. Computational Scientist|Irish Centre of High End Computing, Dublin, Ireland|
+```
 
 ## Education
 |Years|Degree| Institution|
 |--   |--    |--          |
 |2008-2014| PhD in Condensed Matter Physics^[1]| Harish Chandra Research Institute, Allahabad, India|
 |2005-2008| MSc in Physics| Harish Chandra Research Institute, Allahabad, India|
-|2002--2005| BSc in Physics and Mathematics| University of Allahabad, India|
+|2002-2005| BSc in Physics and Mathematics| University of Allahabad, India|
 
-[1]: **Thesis**: _The effect of geometrical frustration on some correlated electron systems_, Supervisor: **Prof. Pinaki Majumdar**.
+```{admonition} **Thesis**
+:class: note
+[1]: **Title**: _The effect of geometrical frustration on some correlated electron systems_, Supervisor: **Prof. Pinaki Majumdar**.
+```
+
 
 
 ## Short biography
@@ -276,41 +252,10 @@ Some of the undergrads develop interest in academia and join Ph.D. programme eit
 ### References
 
 ``````{tab-set}
-````{tab-item} Doctoral
-```{card}
-|   | Doctoral |
-|---|---|
-|🕵🏻 | Prof. Pinaki Majumdar |
-|🏫 |Harish Chandra Research Institute, Prayagraj, UP, INDIA|
-|☎️ | +91 532 2274316 |
-|📧| pinaki@hri.res.in|
-```
-````
-````{tab-item} External
-```{card}
-|   | External|
-|---|---|
-|🕵🏻 | Prof. Alessio Filippetti|
-|🏫 |Dipartimento di Fisica, Università di Cagliari, Italy|
-|☎️ | (+39) (070) 675 4853 |
-|📧| alessio.filippetti@dsf.unica.it|
-```
-````
-````{tab-item} Post-Doctoral
-```{card}
-||Post-Doctoral|
-|---|---|
-|🕵🏻 | Prof. Stefano Sanvito|
-|🏫 |School of Physics and CRANN, Trinity College Dublin, Ireland|
-|☎️ | +353 (0) 18963065 |
-|📧| sanvitos@tcd.ie|
-```
-````
 ````{tab-item} Professional 1
 ```{card}
-||Post-Doctoral|
-|---|---|
 |🕵🏻 | Prof. Jean-Christophe (JC) Desplat|
+|---|---|
 |🏫 |Irish Centre for High-End Computing, Dublin, Ireland|
 |☎️ | +353 1 5291021 |
 |📧| j-c.desplat@ichec.ie|
@@ -318,12 +263,38 @@ Some of the undergrads develop interest in academia and join Ph.D. programme eit
 ````
 ````{tab-item} Professional 2
 ```{card}
-||Post-Doctoral|
-|---|---|
 |🕵🏻 | Dr. Venkatesh Kannan|
+|---|---|
 |🏫 |Irish Centre for High-End Computing, Dublin, Ireland|
 |☎️ | +353 1 5291028 |
 |📧| venkatesh.kannan@ichec.ie|
+```
+````
+````{tab-item} Post-Doctoral
+```{card}
+|🕵🏻 | Prof. Stefano Sanvito|
+|---|---|
+|🏫 |School of Physics and CRANN, Trinity College Dublin, Ireland|
+|☎️ | +353 (0) 18963065 |
+|📧| sanvitos@tcd.ie|
+```
+````
+````{tab-item} Doctoral
+```{card}
+|🕵🏻 | Prof. Pinaki Majumdar |
+|---|---|
+|🏫 |Harish Chandra Research Institute, Prayagraj, UP, INDIA|
+|☎️ | +91 532 2274316 |
+|📧| pinaki@hri.res.in|
+```
+````
+````{tab-item} External
+```{card}
+|🕵🏻 | Prof. Alessio Filippetti|
+|---|---|
+|🏫 |Dipartimento di Fisica, Università di Cagliari, Italy|
+|☎️ | (+39) (070) 675 4853 |
+|📧| alessio.filippetti@dsf.unica.it|
 ```
 ````
 ``````

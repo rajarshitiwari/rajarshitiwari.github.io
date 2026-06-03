@@ -1,26 +1,21 @@
 # Welcome
 
 ## Basics
-``````{grid}
-:gutter: 2
 
-````{grid-item}
-:outline:
-:columns: 9
+``````{grid} 2 1
+````{grid-item-card}
 ```{table}
 |Name: Rajarshi Tiwari                 |
-|--                              |
-|Interests: Condensed matter, Many-body theory|
-|material science, Quantum & HPC Computing|
-|Machine Learning, mathematics, Linux, cycling|
+|--------                              |
+|Interests: Quantum & HPC Computing, Condensed matter|
+|Many-body theory, material science, Machine Learning|
+| mathematics, Linux, cycling|
 ```
 ````
-````{grid-item}
-:columns: 3
+````{grid-item-card}
 ```{image} ./cv/rajr_cv.jpg
-    :alt: photo
-    :width: 200px
-    :align: right
+:width: 200px
+:align: right
 ```
 ````
 ``````

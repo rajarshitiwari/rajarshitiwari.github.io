@@ -1,38 +1,57 @@
-name: deploy-book
+name: Build and Deploy MyST Site
 
-# Only run this when the master branch changes
 on:
   push:
     branches:
-    - master
+      - master
+  workflow_dispatch:
 
-# This job installs dependencies, build the book, and pushes it to `gh-pages`
+# Set permissions for GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  deploy-book:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v6
 
-    # Install dependencies
-    - name: Set up Python 3.12
-      uses: actions/setup-python@v3
-      with:
-        python-version: 3.12
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
 
+      # Install dependencies using uv into the system environment for the runner
+      - name: Install Dependencies
+        run: uv sync
 
-    # Build the book
-    - name: Build the book
-      run: |
-        jupyter-book build .
+      # MyST builds the static HTML into a _build/html directory by default
+      - name: Build MyST Site
+        run: uv run jupyter-book build --html
 
-    # Push the book's HTML to github-pages
-    - name: GitHub Pages action
-      uses: peaceiris/actions-gh-pages@v3.9.3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/html
-        enable_jekyll: false
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: '_build/html'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
