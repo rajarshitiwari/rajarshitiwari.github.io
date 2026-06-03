@@ -1,40 +1,41 @@
 p {text-align: justify;}
 
-/* public/chat.css */
 
-.chat-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 900px;
-  margin: 2rem auto;
-}
+
+/* No container needed! Bubbles sit in the standard document flow */
 
 /* Shared Bubble Properties */
+
 .user-bubble, 
 .ai-bubble {
   padding: 0.5rem 1.2rem;
   border-radius: 18px;
   max-width: 85%;
+  margin-bottom: 1.5rem; /* Replaces the flex gap */
   line-height: 1.6;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  clear: both;
 }
 
-/* User Message */
+/* User Message: Pushed to the right using auto-margins */
 .user-bubble {
-  align-self: flex-end;
+  margin-left: auto; 
+  margin-right: 0;
   background-color: rgba(248, 166, 23, 0.308); /* A nice professional blue */
   color: black;
   border-bottom-right-radius: 1px; /* Flattens the bottom right corner */
 }
 
-/* AI Message */
+/* AI Message: Pushed to the left using auto-margins */
 .ai-bubble {
-  align-self: flex-start;
+  margin-right: auto;
+  margin-left: 0;
   background-color: rgba(82, 234, 211, 0.308);
   color: #24292f;
   border-bottom-left-radius: 1px; /* Flattens the bottom left corner */
 }
+
+/* ... keep your dark mode and pre/code formatting rules down here ... */
 
 /* Clean up internal markdown spacing inside the bubbles */
 .chat-container p:last-child {

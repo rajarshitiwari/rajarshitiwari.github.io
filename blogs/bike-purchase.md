@@ -6,7 +6,7 @@ jupytext:
         extension: .md
         format_name: myst
 kernelspec:
-    display_name: Python 3
+    display_name: python3
     language: python
     name: python3
 mystnb:
@@ -35,9 +35,6 @@ Here’s how the conversation unfolded. It’s not a polished buyer’s guide �
 ---
 
 ## 🤔 Initial Comparison: FastRoad 1 vs FastRoad SL 1
-
-````{div}
-:class: chat-container
 
 ```{div}
 :class: user-bubble
@@ -204,13 +201,12 @@ Try before buying if possible — some brands size large (like Giant).
 - 💡 All options allow some form of light touring or rack setup.
 
 ```
-````
 
 ---
 
 ## 📂 Appendix: Cadence to Speed Code (Python)
 
-```{code-cell} python
+```{code-cell}
 import matplotlib.pyplot as plt
 import numpy as np
 

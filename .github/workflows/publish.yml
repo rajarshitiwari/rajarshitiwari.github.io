@@ -42,7 +42,7 @@ jobs:
 
       # MyST builds the static HTML into a _build/html directory by default
       - name: Build MyST Site
-        run: uv run jupyter-book build --html
+        run: uv run jupyter-book build --execute --html
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
