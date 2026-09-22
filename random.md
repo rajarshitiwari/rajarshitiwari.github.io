@@ -19,3 +19,24 @@ Here are some of the interesting aspects of python for me
   height="100%"
 ></iframe>
 
+
+::: tip HEllo
+
+This is a tip
+
+:::
+
+$$
+I = \int_0^\infty f(x) dx
+$$
+
+::: danger h
+
+Danger
+
+::: warning
+tip
+
+::: info
+HI
+:::

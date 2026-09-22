@@ -6,6 +6,8 @@ import CvHeader from './components/CvHeader.vue'
 import TabGroup from './components/TabGroup.vue'
 import HomeProfile from './components/HomeProfile.vue'
 
+import './custom.css'
+
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
